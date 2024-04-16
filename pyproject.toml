@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_project"
+authors = [
+    {name = "Shivdeep Singh", email = "shivdeep.singh@somemail.com"},
+]
+description = "A dummy project"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+     "ray"
+]
+dynamic = ["version"]
+
+[project.scripts]
+my-script = "my_package.module:function"
+

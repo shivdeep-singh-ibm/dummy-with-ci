@@ -1,0 +1,1 @@
+from my_package.sample import welcome_message
