@@ -8,7 +8,7 @@ build: venv
 	pip install .
 
 test:
-    ls -la
+	ls -la
 	. ./venv/bin/activate
 	@python -c "import my_package.sample as m; m.welcome_message()"
 	
