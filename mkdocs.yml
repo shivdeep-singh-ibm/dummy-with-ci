@@ -1,0 +1,24 @@
+site_name: "MyPackage"
+
+nav: 
+  - Home: index.md
+  - Tutorials:
+      - tutorials.md
+  - API:
+     - API/index.md
+
+#  - About: about.md
+
+theme:
+  name: 'material'
+  favicon: 'favicon.ico'
+  palette:
+    primary: black
+#  palette:
+#    primary: 'blue grey'
+  features:
+    - navigation.tabs
+plugins:
+- search
+- mkdocstrings
+
