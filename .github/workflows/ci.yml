@@ -8,8 +8,13 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+    - name: cpi
+      run: |
+        cat /proc/cpu
     - name: Build
       run: |
           pip install ray[default]
-          python -c "import ray"
+    - name: check cpu
+      run: |
+          python -c "import ray; ray.init(), print (ray.available_resources)"
           
