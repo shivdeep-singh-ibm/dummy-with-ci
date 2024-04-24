@@ -13,5 +13,5 @@ jobs:
           pip install ray[default]
     - name: check cpu
       run: |
-          python -c "import ray; ray.init(), print (ray.available_resources)"
+          python -c "import ray; ray.init(), print (ray.available_resources())"
           
