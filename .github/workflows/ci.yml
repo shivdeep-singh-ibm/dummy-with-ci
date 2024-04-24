@@ -8,9 +8,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: cpi
-      run: |
-        cat /proc/cpu
     - name: Build
       run: |
           pip install ray[default]
