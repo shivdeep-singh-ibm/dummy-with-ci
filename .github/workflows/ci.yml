@@ -21,11 +21,6 @@ jobs:
       uses: actions/checkout@v4
     - name: Build
       run: |
-          python -m venv venv
-          . ./venv/bin/activate
-          python -m pip install --upgrade pip
-          pip install  .
-          pip install  mkdocs mkdocs-material mkdocstrings[python]
-          mkdocs build
-          mkdocs gh-deploy --force
+          docker build -t sd:latest .
+          docker run sd:latest sh -c 'pip freeze'
           
