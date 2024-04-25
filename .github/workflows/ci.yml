@@ -26,5 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install  .
           pip install  mkdocs mkdocs-material mkdocstrings[python]
+          mkdocs build
           mkdocs gh-deploy --force
           
